@@ -146,8 +146,16 @@ img {
   color: #2196f3;
 }
 
-.header-mail {
+.header-contact:first-child {
   margin-right: 50px;
+}
+
+.header-contacts-icon {
+  width: 16px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: #757575;
 }
 
 .info-header a {
@@ -161,6 +169,11 @@ img {
 .info-header a:hover,
 .info-header a:focus {
   color: #2196f3;
+}
+
+.header-contact:hover .header-contacts-icon,
+.header-contact:focus .header-contacts-icon {
+  fill: #2196f3;
 }
 
 /* ============================== HEADER DONE ========================================== */
@@ -210,6 +223,20 @@ img {
   margin-top: 40px;
 
   padding: 10px 32px;
+}
+
+.our-advantages-icon {
+  display: flex;
+  width: 70px;
+  height: 70px;
+}
+.our-advantages-item {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .our-advantages {
@@ -271,6 +298,8 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
+}
+.our-team-social-list-icon-color {
   fill: #afb1b8;
 }
 
@@ -330,6 +359,16 @@ img {
 .regular-customer-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.regular-customer-link:hover,
+.regular-customer-link:focus {
+  border-color: #2196f3;
+}
+
+.regular-customer-link:hover .regular-customer-icon,
+.regular-customer-link:focus .regular-customer-icon {
+  fill: #2196f3;
+}
 /* ======================================== MAIN ========================================= */
 
 /* ===================================== FOOTER ========================================= */
@@ -382,6 +421,40 @@ address a {
   margin-top: 9px;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-social-links-items {
+  display: flex;
+}
+
+.footer-adress-container {
+  margin-right: 70px;
+}
+
+.footer-join-container {
+  padding-top: 10px;
+}
+
+.join-us-social-list-icon-color {
+  fill: #ffffff;
+}
+
+.join-us-social-list-link-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-join-h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 /* ==================================== Portfoliopage.html =========================================*/
 
 /* ===================================== MAIN SETTINGS ============================================ */
@@ -416,6 +489,8 @@ address a {
 .button-portfolio:focus {
   background: #2196f3;
   color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-cards {
@@ -433,6 +508,10 @@ address a {
 .portfolio-card {
   background: #ffffff;
   box-sizing: border-box;
+}
+.portfolio-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .section2 h3 {
